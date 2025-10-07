@@ -4,6 +4,8 @@ Student ID: 28248
 Course: PL/SQL and Database Administration
 Instructor: —
 Date: October 2025
+<img width="428" height="328" alt="image" src="https://github.com/user-attachments/assets/595fa8ef-f0a9-4e62-ab69-72f5568342fe" />
+
 ________________________________________
 1. Introduction
 The aim of the task was focusing on how to work with Oracle 21c Multitenant Architecture, particularly the creation, management, and deletion of Pluggable Databases (PDBs) within a Container Database (CDB).
@@ -12,6 +14,8 @@ The main objectives were:
 •	To create a new pluggable database for classwork.
 •	To create and delete another pluggable database for practice.
 •	To verify the operations using Oracle Enterprise Manager (OEM).
+<img width="854" height="191" alt="image" src="https://github.com/user-attachments/assets/ebbc6c43-fbce-41ae-9b67-64d6eb8fe1f1" />
+
 ________________________________________
 2. Environment Setup
 •	Operating System: Windows 11 Pro
@@ -44,6 +48,8 @@ Explanation:
 •	SAVE STATE – ensures it reopens automatically on database restart.
 Result:
 The PDB was created successfully and appeared under SHOW PDBS as READ WRITE.
+<img width="940" height="249" alt="image" src="https://github.com/user-attachments/assets/e62eabdd-f158-4706-a071-4f2f2d2a390e" />
+
 
  
 ________________________________________
@@ -58,7 +64,9 @@ CREATE PLUGGABLE DATABASE NI_to_delete_pdb_28248
 Open and Verify:
 ALTER PLUGGABLE DATABASE NI_to_delete_pdb_28248 OPEN READ WRITE;
 SHOW PDBS;
-This screenshot showing ol_to_delete_pdb_28333 in READ WRITE mode. 
+This screenshot showing ol_to_delete_pdb_28333 in READ WRITE mode.
+<img width="587" height="378" alt="image" src="https://github.com/user-attachments/assets/b0871329-6fbf-4eb9-9262-c9d3a8a75e97" />
+
 ________________________________________
 Deletion Procedure
 SQL Script (Deletion):
@@ -70,6 +78,8 @@ Explanation:
 •	INCLUDING DATAFILES ensures that all associated files are removed from disk.
 •	SHOW PDBS confirms removal from the container database.
 Output after executing DROP command showing the PDB is no longer listed 
+<img width="940" height="249" alt="image" src="https://github.com/user-attachments/assets/b8331ced-3878-4f07-9910-6ca273eab9fa" />
+
  
 ________________________________________
 5. Task 3 – Managing PDBs via Oracle Enterprise Manager (OEM)
@@ -104,6 +114,8 @@ Example Commands:
 ALTER PLUGGABLE DATABASE pdb_NIYIBIZI28248 OPEN READ WRITE;
 ALTER PLUGGABLE DATABASE pdb_NIYIBIZI28248 OPEN READ ONLY;
 ALTER PLUGGABLE DATABASE pdb_NIYIBIZI28248 CLOSE IMMEDIATE;
+<img width="997" height="482" alt="image" src="https://github.com/user-attachments/assets/01d63a9f-e9d1-4213-a26a-7cafb96c73b4" />
+
 ________________________________________
 8. Role of the ALTER Command
 ALTER is used to modify the state or structure of existing database objects.
